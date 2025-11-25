@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.test_lab_week_12.model.Movie
+import com.bumptech.glide.Glide
 
 class MovieAdapter(private val clickListener: MovieClickListener) :
     RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
@@ -53,7 +53,7 @@ class MovieAdapter(private val clickListener: MovieClickListener) :
         }
     }
 
-    interface MovieClickListener {
+    fun interface MovieClickListener {
         fun onMovieClick(movie: Movie)
     }
 }
